@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, {Component} from 'react'
 import './App.css';
+import Post from './Post.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    const post = {
+      title: "Dinosaurs are awesome",
+      author: "Stealty Stegosaurus",
+      body: "check out this body property!",
+      comments: [
+        "First!", 
+        "Great post", 
+        "Hire this author now!"
+      ]
+    }
+  
+    return (
+      <Post 
+        title={post.title}
+        author={post.author}
+        body={post.body}
+        comments={post.comments}
+      />
+    )
+  }
 }
 
 export default App;

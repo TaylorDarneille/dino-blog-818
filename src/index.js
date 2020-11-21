@@ -1,8 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Post from './Post.js'
+import App from './App.js'
 import reportWebVitals from './reportWebVitals';
+
+// const post = {
+//   title: "Dinosaurs are awesome",
+//   author: "Stealty Stegosaurus",
+//   body: "check out this body property!",
+//   comments: [
+//     "First!", 
+//     "Great post", 
+//     "Hire this author now!"
+//   ]
+// }
 
 ReactDOM.render(
   <React.StrictMode>
